@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "death_copy",
+	"version": "${version}",
+	"name": "death copy",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"JWN"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/death_copy/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"jwn.death_copy.DeathCopyClient"
+		]
+	},
+	"mixins": [
+		"death_copy.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
